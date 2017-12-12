@@ -8,6 +8,10 @@ class Triangle
     @z = z
   end
 
+  def equilateral?
+    self.x == self.y && self.y == self.z
+  end
+
   def kind
     if self.length1 <= 0 || self.length2 <= 0 || self.length3 <= 0
       begin
