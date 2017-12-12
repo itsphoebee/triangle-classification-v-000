@@ -27,7 +27,7 @@ class Triangle
   end
 
   def kind
-    if self.x + self.y =< self.z || self.y + self.z =< self.x || self.x + self.z =< self.y
+    if self.x + self.y <= self.z || self.y + self.z <= self.x || self.x + self.z <= self.y
         raise TriangleError
         puts error.message
     elsif
