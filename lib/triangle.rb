@@ -12,6 +12,10 @@ class Triangle
     self.x == self.y && self.y == self.z
   end
 
+  def isosceles?
+    self.x == self.y || self.y == self.z || self.x == self.z
+  end
+
   def kind
     if self.length1 <= 0 || self.length2 <= 0 || self.length3 <= 0
       begin
