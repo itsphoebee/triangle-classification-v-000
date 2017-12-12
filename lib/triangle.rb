@@ -3,9 +3,9 @@ class Triangle
   attr_accessor :x, :y, :z
   attr_reader :type
   def initialize(x, y, z)
-    @length1 = length1
-    @length2 = length2
-    @length3 = length3
+    @x = x
+    @y = y
+    @z = z
   end
 
   def kind
