@@ -8,7 +8,7 @@ class Triangle
     @z = z
   end
 
-  def equilateral
+  def equilateral?
     self.x == self.y && self.y == self.z
   end
 
