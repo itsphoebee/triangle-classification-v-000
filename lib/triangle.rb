@@ -21,14 +21,12 @@ class Triangle
   end
 
   def illegal?
-    if self.x <= 0 || self.y <= 0 || self.z <= 0
-    elsif
-      self.x + self.y < self.z || self.y + self.z < self.x || self.x + self.z < self.y
+    if self.x + self.y < self.z || self.y + self.z < self.x || self.x + self.z < self.y
     end
   end
 
   def kind
-    if illegal?
+    if self.x <= 0 || self.y <= 0 || self.z <= 0
         raise TriangleError
         puts error.message
     elsif
