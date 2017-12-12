@@ -26,4 +26,5 @@ end
 
 class TriangleError < StandardError
   def message "Please enter correct lengths."
+  end
 end
