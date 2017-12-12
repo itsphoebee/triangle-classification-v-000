@@ -24,8 +24,7 @@ class Triangle
   end
 
   def kind
-    if self.x <= 0 || self.y <= 0 || self.z <= 0 || 
-      
+    if illegal?
       begin
         raise TriangleError
         puts error.message
