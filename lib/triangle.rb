@@ -33,7 +33,7 @@ class Triangle
       isosceles? == true
       @type = :isosceles
     elsif
-      scalene? == true
+      scalene?
       @type = :scalene
     end
   end
