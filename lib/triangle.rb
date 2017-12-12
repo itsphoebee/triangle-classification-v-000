@@ -9,8 +9,13 @@ class Triangle
 
   def kind
     if self.length1 == self.length2 && self.length2 == self.length3
-      @type == :equilateral
+      @type = :equilateral
     elsif
+      self.length1 == self.length2 || self.length2 == self.length3 || self.length1 == self.length3
+      @type = :isosceles
+    else
+      self.length1 != self.length2 && self.length2 != self.length3 && self.length1 != self.length3
+      @type = :scalene
     end
   end
 
