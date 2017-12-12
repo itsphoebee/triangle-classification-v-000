@@ -22,16 +22,15 @@ class Triangle
 
   def illegal?
     if self.x <= 0 || self.y <= 0 || self.z <= 0
-
+    elsif
+      self.x + self.y < self.z || self.y + self.z < self.x || self.x + self.z < self.y
     end
   end
 
   def kind
     if illegal?
-      begin
         raise TriangleError
-
-      end
+        puts error.message
     elsif
       equilateral?
       @type = :equilateral
