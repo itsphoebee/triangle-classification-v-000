@@ -9,7 +9,11 @@ class Triangle
 
   def kind
     if self.length1 < 0 || self.length2 < 0 || self.length3 < 0
+      begin
       raise TriangleError
+    rescue TriangleError => error
+      puts error.message
+    end
       elsif self.length1 == self.length2 && self.length2 == self.length3
       @type = :equilateral
     elsif
