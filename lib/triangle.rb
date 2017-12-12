@@ -27,7 +27,7 @@ class Triangle
         puts error.message
       end
     elsif
-      if equilateral? 
+      equilateral? == true
       @type = :equilateral
     elsif
       self.length1 == self.length2 || self.length2 == self.length3 || self.length1 == self.length3
