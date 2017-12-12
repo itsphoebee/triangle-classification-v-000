@@ -21,12 +21,13 @@ class Triangle
   end
 
   def illegal?
-    if self.x + self.y < self.z || self.y + self.z < self.x || self.x + self.z < self.y
+    if self.x <= 0 || self.y <= 0 || self.z <= 0 
+      
     end
   end
 
   def kind
-    if self.x <= 0 || self.y <= 0 || self.z <= 0
+    if self.x + self.y < self.z || self.y + self.z < self.x || self.x + self.z < self.y
         raise TriangleError
         puts error.message
     elsif
