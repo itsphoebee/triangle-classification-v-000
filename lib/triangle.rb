@@ -30,7 +30,7 @@ class Triangle
       equilateral? == true
       @type = :equilateral
     elsif
-      isosceles? == true
+      isosceles?
       @type = :isosceles
     elsif
       scalene?
