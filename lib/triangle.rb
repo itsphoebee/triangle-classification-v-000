@@ -22,7 +22,7 @@ class Triangle
 
   def illegal?
     if self.x <= 0 || self.y <= 0 || self.z <= 0 || self.x + self.y <= self.z || self.y + self.z <= self.x || self.x + self.z <= self.y
-      true
+
     end
   end
 
