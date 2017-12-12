@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if @length1 == @length2 == @length3
+    if self.length1 == self.length2 && self.length2 == self.length3
       @type == :equilateral
     end
   end
