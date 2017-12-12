@@ -1,5 +1,11 @@
 class Triangle
   # write code here
-  def initialize
+  def initialize(lengths)
+    
   end
+end
+
+
+class TriangleError < StandardError
+
 end
