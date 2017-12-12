@@ -26,7 +26,8 @@ class Triangle
         raise TriangleError
         puts error.message
       end
-      elsif self.length1 == self.length2 && self.length2 == self.length3
+    elsif
+      if equilateral? 
       @type = :equilateral
     elsif
       self.length1 == self.length2 || self.length2 == self.length3 || self.length1 == self.length3
