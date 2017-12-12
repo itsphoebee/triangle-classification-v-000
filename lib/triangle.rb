@@ -27,7 +27,7 @@ class Triangle
         puts error.message
       end
     elsif
-      equilateral? == true
+      equilateral?
       @type = :equilateral
     elsif
       isosceles?
