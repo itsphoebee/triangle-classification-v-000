@@ -20,8 +20,12 @@ class Triangle
     self.x != self.y && self.y != self.z && self.x != self.z
   end
 
+  def illegal?
+  end
+
   def kind
-    if self.x <= 0 || self.y <= 0 || self.z <= 0
+    if self.x <= 0 || self.y <= 0 || self.z <= 0 || 
+      
       begin
         raise TriangleError
         puts error.message
