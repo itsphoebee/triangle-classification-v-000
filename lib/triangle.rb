@@ -1,6 +1,7 @@
 class Triangle
   # write code here
-  attr_accessor :x, :y, :z :type
+  attr_accessor :x, :y, :z
+  attr_reader :type
   def initialize(x, y, z)
     @length1 = length1
     @length2 = length2
