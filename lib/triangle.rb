@@ -1,7 +1,6 @@
 class Triangle
   # write code here
-  attr_accessor :length1, :length2, :length3
-  attr_reader :type
+  attr_accessor :length1, :length2, :length3, :type
   def initialize(length1:, length2:, length3:)
     @length1 = length1
     @length2 = length2
@@ -18,5 +17,6 @@ end
 
 
 class TriangleError < StandardError
-
+  def message
+    
 end
