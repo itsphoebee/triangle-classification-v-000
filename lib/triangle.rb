@@ -30,7 +30,7 @@ class Triangle
     if illegal?
       begin
         raise TriangleError
-        puts error.message
+
       end
     elsif
       equilateral?
